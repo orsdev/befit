@@ -1,0 +1,37 @@
+.hero {
+  &__nav {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    background: $darkcyan;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+
+    &-container {
+      flex: 0 0 80%;
+      text-align: end;
+      padding: 1rem 5rem 1rem 1rem;
+
+    }
+
+    &-item {
+      display: inline-block;
+    }
+
+    &-link {
+      font-size: 1.6rem;
+    }
+
+    &-item:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+
+  &__logo {
+    flex: 0 0 20%;
+    padding: 1rem;
+    .logo {
+      font-size: 1.7rem;
+    }
+  }
+}

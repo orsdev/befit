@@ -1,0 +1,36 @@
+.btn-outline-light {
+  padding: 0.6rem 1.2rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  background: transparent;
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  color: #f8f9fa;
+  background-image: none;
+  border-color: #f8f9fa;
+}
+.btn-outline-light:hover {
+  color: $black;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  font-weight: bold;
+}
+.btn-outline-light:focus,
+.btn-outline-light.focus {
+  box-shadow: 0 0 0 1px rgba(248, 249, 250, 0.5);
+  outline: none;
+}
+.btn-outline-light:active,
+.btn-outline-light.active,
+.show {
+  color: #fff;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  outline: none;
+}
