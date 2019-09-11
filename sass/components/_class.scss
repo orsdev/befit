@@ -1,0 +1,29 @@
+@import "components/variable";
+
+.class {
+  background: $darkcyan;
+  .class-text {
+    font-size: 3rem;
+    text-align: end;
+    padding-right: 8rem;
+  }
+
+  &__type {
+    width: 99%;
+
+    &-container1,
+    &-container2{
+      display: flex;
+      align-items: center;
+    }
+
+    &-item {
+      padding: 2rem 3rem;
+      margin-top: 1.2rem;
+    }
+  }
+  [class*='outline'] {
+    color: rgb(255, 115, 0);
+    font-size: 4rem;
+  }
+}

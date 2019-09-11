@@ -20,6 +20,23 @@
 .margin-top-md {
   margin-top: 1.5rem; }
 
+.opacify {
+  opacity: .8; }
+
+.bg-darkcyan {
+  background: #0d2e3a;
+  animation: slideDown .3s ease;
+  -webkit-animation: slideDown .3s ease; }
+
+.bg-transparent {
+  background: transparent; }
+
+.section-padding {
+  padding: 8rem .5rem; }
+
+.text-light {
+  color: white; }
+
 .hero {
   color: white;
   max-width: 100%;
@@ -40,9 +57,10 @@
   width: 100%;
   display: flex;
   flex: 1;
-  background: #0d2e3a;
   padding-top: 1.3rem;
-  padding-bottom: 1.3rem; }
+  padding-bottom: 1.3rem;
+  position: fixed;
+  z-index: 5; }
   .hero__nav-container {
     flex: 0 0 80%;
     text-align: end;
@@ -60,7 +78,7 @@
     font-size: 1.7rem; }
 
 .btn-outline-light {
-  padding: 0.6rem 1.2rem;
+  padding: 0.8rem 1.5rem;
   font-size: 1.8rem;
   line-height: 1.5;
   border-radius: 0.3rem;
@@ -95,6 +113,31 @@
   border-color: #f8f9fa;
   outline: none; }
 
+@keyframes slideDown {
+  from {
+    padding-bottom: 0;
+    opacity: 0; }
+  to {
+    padding-bottom: 1.4rem;
+    opacity: 1; } }
+.class {
+  background: #0d2e3a; }
+  .class .class-text {
+    font-size: 3rem;
+    text-align: end;
+    padding-right: 8rem; }
+  .class__type {
+    width: 99%; }
+    .class__type-container1, .class__type-container2 {
+      display: flex;
+      align-items: center; }
+    .class__type-item {
+      padding: 2rem 3rem;
+      margin-top: 1.2rem; }
+  .class [class*='outline'] {
+    color: #ff7300;
+    font-size: 4rem; }
+
 *,
 *::before,
 *::after {
@@ -103,12 +146,29 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden; }
 
+p {
+  font-size: 1.5rem;
+  font-weight: 100; }
+
+@media (min-width: 0px) and (max-width: 930px) {
+  .class__type-container1,
+  .class__type-container2 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto; }
+
+  .class-text {
+    text-align: center !important;
+    padding: 0; } }
 @media (min-width: 0px) and (max-width: 600px) {
   .hero__nav-container {
     display: none; } }

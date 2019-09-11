@@ -1,5 +1,6 @@
 @import "components/variable";
 
+//remove styling from ul element
 .unstyle {
   text-decoration: none;
   color: $white;
@@ -12,6 +13,7 @@
   line-height: 1.1;
 }
 
+//move element to the center
 .centralize{
   position: absolute;
   top: 40%;
@@ -22,6 +24,29 @@
 .margin-top-sm{
   margin-top: 1.2rem;
 }
+
 .margin-top-md{
   margin-top: 1.5rem;
+}
+
+.opacify {
+  opacity: .8;
+}
+
+.bg-darkcyan {
+  background: $darkcyan;
+  animation: slideDown .3s ease;
+  -webkit-animation: slideDown .3s ease;
+}
+
+.bg-transparent {
+  background: transparent;
+}
+
+.section-padding {
+  padding: 8rem .5rem;
+}
+
+.text-light{
+  color: $white;
 }
