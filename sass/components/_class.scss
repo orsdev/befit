@@ -2,15 +2,15 @@
 
 .class {
   background: $darkcyan;
+
   .class-text {
-    font-size: 3rem;
-    text-align: end;
-    padding-right: 8rem;
+    text-align: right;
+    margin-right: 3rem;
+    padding: 0;
   }
 
   &__type {
-    width: 99%;
-
+  
     &-container1,
     &-container2{
       display: flex;
@@ -24,6 +24,5 @@
   }
   [class*='outline'] {
     color: rgb(255, 115, 0);
-    font-size: 4rem;
   }
 }

@@ -5,6 +5,8 @@
 @import "components/button";
 @import "components/animation";
 @import "components/class";
+@import "components/responsive";
+
 
 *,
 *::before,
@@ -29,5 +31,3 @@ p{
   font-size: 1.5rem;
   font-weight: 100;
 }
-
-@import "components/responsive";

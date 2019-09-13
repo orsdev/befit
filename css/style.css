@@ -8,6 +8,12 @@
   font-weight: 300;
   line-height: 1.1; }
 
+.sub-header {
+  font-size: 3rem; }
+
+.icon-font-size {
+  font-size: 4rem; }
+
 .centralize {
   position: absolute;
   top: 40%;
@@ -37,21 +43,29 @@
 .text-light {
   color: white; }
 
+.w-100 {
+  width: 100%; }
+
+.w-99 {
+  width: 99%; }
+
+.padding-one {
+  padding: 1rem; }
+
 .hero {
   color: white;
   max-width: 100%;
   position: relative; }
   .hero__bg {
     background: url(../../assets/images/3.jpg);
-    height: 600px;
+    height: 640px;
     background-size: cover;
-    width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
     overflow: hidden; }
   .hero__overlay {
     background: rgba(0, 0, 0, 0.6);
-    height: 600px; }
+    height: 640px; }
 
 .hero__nav {
   width: 100%;
@@ -123,21 +137,36 @@
 .class {
   background: #0d2e3a; }
   .class .class-text {
-    font-size: 3rem;
-    text-align: end;
-    padding-right: 8rem; }
-  .class__type {
-    width: 99%; }
-    .class__type-container1, .class__type-container2 {
-      display: flex;
-      align-items: center; }
-    .class__type-item {
-      padding: 2rem 3rem;
-      margin-top: 1.2rem; }
+    text-align: right;
+    margin-right: 3rem;
+    padding: 0; }
+  .class__type-container1, .class__type-container2 {
+    display: flex;
+    align-items: center; }
+  .class__type-item {
+    padding: 2rem 3rem;
+    margin-top: 1.2rem; }
   .class [class*='outline'] {
-    color: #ff7300;
-    font-size: 4rem; }
+    color: #ff7300; }
 
+@media (min-width: 0px) and (max-width: 1116px) {
+  .sub-header {
+    font-size: 2.7rem; } }
+@media (min-width: 0px) and (max-width: 930px) {
+  .class__type-container1,
+  .class__type-container2 {
+    display: block;
+    width: 90%;
+    margin: auto; }
+
+  .class-text {
+    text-align: center; } }
+@media (min-width: 0px) and (max-width: 600px) {
+  .hero__nav-container {
+    display: none; } }
+@media (min-width: 0px) and (max-width: 480px) {
+  .header-text {
+    font-size: 3.5rem; } }
 *,
 *::before,
 *::after {
@@ -157,20 +186,5 @@ body {
 p {
   font-size: 1.5rem;
   font-weight: 100; }
-
-@media (min-width: 0px) and (max-width: 930px) {
-  .class__type-container1,
-  .class__type-container2 {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 0 auto; }
-
-  .class-text {
-    text-align: center !important;
-    padding: 0; } }
-@media (min-width: 0px) and (max-width: 600px) {
-  .hero__nav-container {
-    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

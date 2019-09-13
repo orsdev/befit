@@ -13,6 +13,14 @@
   line-height: 1.1;
 }
 
+.sub-header{
+  font-size: 3rem;
+}
+
+.icon-font-size{
+  font-size: 4rem;
+}
+
 //move element to the center
 .centralize{
   position: absolute;
@@ -49,4 +57,16 @@
 
 .text-light{
   color: $white;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-99 {
+  width: 99%;
+}
+
+.padding-one{
+  padding: 1rem;
 }
