@@ -1,0 +1,60 @@
+@import "components/variable";
+
+.stories{
+  position: relative;
+
+  &__heading {
+    background: $white;
+  }
+
+.bg-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 330px;
+	width: 100%;
+	z-index: -1;
+	opacity: .7;
+	overflow: hidden;
+
+	&__content {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+}
+
+.review {
+ width: 60%;
+ margin: 0 auto;
+
+ &__stories {
+  width: 100%;
+  display: flex !important;
+  flex: 1;
+ }
+}
+
+.stories__text {
+  background: white;
+  padding: 2rem 1.5rem 2rem 6rem;
+  align-self: center;
+}
+
+.stories__shape{
+  position: relative;
+  left: 40px;
+  z-index: 2;
+}
+
+
+.stories__name {
+  font-size: 1.8rem;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 150px;
+  color: $darkcyan;
+}

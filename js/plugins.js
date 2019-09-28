@@ -1,9 +1,3 @@
-
-//call wow function
-new WOW().init();
-
-
-
 //--- NAV BACKGROUND MENU EFFECT --//
 let navBarEffect = (e) => {
 
@@ -40,3 +34,12 @@ function debounce(func, wait = 10, immediate = true) {
 
 //listen to scroll event
 document.addEventListener('scroll' , debounce(navBarEffect));
+
+
+//call wow function
+new WOW().init();
+
+//call slick slider
+ $('.slider').slick({
+   autoplay: true
+ });

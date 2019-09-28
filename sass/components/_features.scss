@@ -1,0 +1,25 @@
+.features {
+  position: relative;
+
+  &__item--text {
+    flex: 0 0 50%;
+    padding: 10rem 0;
+    box-shadow: 2px 4px 5px 0.1px gainsboro;
+    background: $white;
+  }
+
+  &__item--image {
+    flex: 0 0 40%;
+  }
+
+  &__container2 {
+    background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.9) 50%,
+      lighten(lightblue, 10%) 50%
+    );
+    .features__item--text {
+      box-shadow: none;
+    }
+  }
+}
