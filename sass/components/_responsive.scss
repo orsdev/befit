@@ -105,5 +105,12 @@
    }
  }
  
-  
+  .newsletter {
+   &__body {
+    top: 10%;
+  }
+   .form__group {
+    width: 90%;
+   }
+  }
 }

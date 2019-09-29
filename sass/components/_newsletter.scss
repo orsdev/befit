@@ -1,0 +1,69 @@
+@import "components/variable";
+
+.newsletter {
+  background: $darkcyan;
+  position: relative;
+
+  &__bg {
+    background: url("../../assets/images/cta_bg.jpg");
+    background: url("../assets/images/cta_bg.jpg");
+    height: 350px;
+    overflow-y: hidden;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+  }
+
+  &__body {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+  }
+
+  &__overlay {
+    background: rgba(0, 0, 0, 0.6);
+    height: 350px;
+  }
+
+  .form__group {
+    width: 527px;
+    margin-left: auto;
+    margin-right: auto;
+
+    input[type='email'] {
+      background-color: #f9f9f9;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      color: transparentize($black, .3);
+      height: 40px;
+      padding: 0 130px 0 20px;
+      box-shadow: none;
+      margin-bottom: .5rem;
+      width: 100%;
+      font-size: 1.6rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__button {
+    height: 45px;
+    padding: 1rem 1.1rem;
+    outline: none;
+    background: lighten($darkcyan , 20%);
+    color: $white;
+    border: none;
+    font-size: 1.6rem;
+   
+    &:hover {
+     background: lighten($darkcyan , 15%);
+    }
+
+    &:active {
+     font-weight: 600;
+    }
+  }
+}
