@@ -38,9 +38,9 @@ document.addEventListener('scroll' , debounce(navBarEffect));
 
 
 //call wow function
-// new WOW().init();
+new WOW().init();
 
-// //call slick slider
-//  $('.slider').slick({
-//    autoplay: true
-//  });
+//call slick slider
+ $('.slider').slick({
+   autoplay: true
+ });
