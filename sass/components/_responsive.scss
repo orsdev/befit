@@ -81,12 +81,21 @@
   }
 }
 
+@media (min-width: 601px) {
+ .hero__toggle-container {
+  display: none;
+}
+}
+
 @media (min-width: 0px) and (max-width: 600px) {
   
 .hero__nav-container {
   display: none;
 }
 
+.hero__nav {
+ display: block !important;
+}
   .header-text {
     font-size: 3.5rem;
   }
