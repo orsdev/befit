@@ -1,16 +1,17 @@
 //--- NAV BACKGROUND MENU EFFECT --//
 let navBarEffect = (e) => {
 
-  //get window current position
+  //get window current position and width
   let currentScroll = Math.round(window.pageYOffset);
+  let currentWidth = window.innerWidth;
 
   //add and remove classes if true or false
-  if(currentScroll > 100){
+  if(currentScroll > 100 && currentWidth > 600){
     document.querySelector('.hero__nav').classList.remove('bg-transparent');
     document.querySelector('.hero__nav').classList.add('bg-darkcyan');
   }else {
-    document.querySelector('.hero__nav').classList.remove('bg-darkcyan');
-    document.querySelector('.hero__nav').classList.add('bg-transparent');
+    document.querySelector('.hero__nav').classList.add('bg-darkcyan');
+    document.querySelector('.hero__nav').classList.remove('bg-transparent');
   }
 
 };
@@ -37,9 +38,9 @@ document.addEventListener('scroll' , debounce(navBarEffect));
 
 
 //call wow function
-new WOW().init();
+// new WOW().init();
 
-//call slick slider
- $('.slider').slick({
-   autoplay: true
- });
+// //call slick slider
+//  $('.slider').slick({
+//    autoplay: true
+//  });
