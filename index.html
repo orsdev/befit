@@ -17,21 +17,44 @@
 <body>
 
  <!--HEADER SECTION-->
- <section class="hero">
+ <section class="hero" id="home">
   <div class="hero__bg w-100">
    <div class="hero__overlay bg-transparent">
     <nav class="hero__nav">
      <div class="hero__logo">
-      <h1 class="logo"> <a class="unstyle" href="index.html">BEFIT</a></h1>
+      <h1 class="logo">
+       <a class="unstyle" href="#home">BEFIT</a>
+      </h1>
      </div>
      <ul class="hero__nav-container unstyle">
-      <li class="hero__nav-item"><a class="hero__nav-link unstyle" href="#home">Home</a></li>
       <li class="hero__nav-item"><a class="hero__nav-link unstyle" href="#classes">Classes</a></li>
       <li class="hero__nav-item"><a class="hero__nav-link unstyle" href="#features">Features</a></li>
-      <li class="hero__nav-item"><a class="hero__nav-link unstyle" href="#reviews">Reviews</a></li>
-      <li class="hero__nav-item"><a class="hero__nav-link unstyle" href="#pricing">Pricing</a></li>
+      <li class="hero__nav-item"><a class="hero__nav-link unstyle" href="#stories">Reviews</a></li>
       <li class="hero__nav-item"><a class="hero__nav-link unstyle" href="#contact">Contact</a></li>
      </ul>
+     <div class="hero__toggle-container">
+      <span class="toggle-open">
+       <i class="opacify ion-android-menu icon-font-size icon icon-open"></i>
+      </span>
+      <span class="toggle-close">
+       <i class="opacify ion-android-close icon-font-size icon icon-close"></i>
+      </span>
+     </div>
+     <div class="toggle">
+      <h1 class="toggle__logo text-center padding-one opacify">
+       <a class="unstyle" href="#home">BEFIT</a>
+      </h1>
+      <ul class="opacify toggle__nav w-100 text-center">
+       <li class="toggle__nav-item">
+        <a class="toggle_nav-link unstyle" href="#classes">Classes</a></li>
+       <li class="toggle__nav-item">
+        <a class="toggle__nav-link unstyle" href="#features">Features</a></li>
+       <li class="toggle__nav-item">
+        <a class="toggle__nav-link unstyle" href="#stories">Reviews</a></li>
+       <li class="toggle__nav-item">
+        <a class="toggle__nav-link unstyle" href="#contact">Contact</a></li>
+      </ul>
+     </div>
     </nav>
    </div>
    <div class="hero__text centralize padding-one">
@@ -145,7 +168,7 @@
  </section>
 
  <!--STORIES SECTION-->
- <section class="stories">
+ <section id="stories" class="stories">
   <div class="stories__heading wow fadeInUp padding-one" data-wow-delay=".1s">
    <h2 class="main-header text-center opacify2"> What People Are Saying</h2>
    <p class="margin-top-md w-60 opacify text-center margin-center">Lorem ipsum dolor sit amet consectetur,
@@ -226,41 +249,46 @@
   </div>
  </section>
 
- 
+
  <!--FOOTER SECTION-->
- <section id="footer" class="footer w-100">
- <footer class="footer section-padding">
-		<div class="footer__logo-box">
-		 <h2 class="main-header opacify2 text-center text-light w-100"> BEFIT </h2>
-		</div>
-  <div class="navigation__container w-100">
-				<div class="footer__navigation">
-					<ul class="footer__list">
-						<li class="footer__item">
-							<a href="#" class="footer__link opacify2">Company</a>
-						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__link opacify2">Contact us</a>
-						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__link opacify2">Privacy policy</a>
-						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__link opacify2">Terms</a>
-						</li>
-					</ul>
-				</div>	
-			<div class="footer__copyright text-light">
-				<p class="copyright opacify2">&copy; copyright BEFIT 2019</p>
+ <section id="contact" class="footer w-100">
+  <a href="#home" class="text-light">
+   <span class="footer__go-up text-light opacify2"><i class="ion-ios-arrow-thin-up arrow-up icon-font-size"></i></span>
+  </a>
+  <footer class="footer section-padding">
+   <div class="footer__logo-box">
+    <h2 class="main-header opacify2 text-center text-light w-100"> BEFIT </h2>
    </div>
-  </div>
- </footer>
-</section>
- 
+   <div class="navigation__container w-100">
+    <div class="footer__navigation">
+     <ul class="footer__list">
+      <li class="footer__item">
+       <a href="#" class="footer__link opacify2">Company</a>
+      </li>
+      <li class="footer__item">
+       <a href="#" class="footer__link opacify2">Contact us</a>
+      </li>
+      <li class="footer__item">
+       <a href="#" class="footer__link opacify2">Privacy policy</a>
+      </li>
+      <li class="footer__item">
+       <a href="#" class="footer__link opacify2">Terms</a>
+      </li>
+     </ul>
+    </div>
+    <div class="footer__copyright text-light">
+     <p class="copyright opacify2">&copy; copyright BEFIT 2019</p>
+    </div>
+   </div>
+  </footer>
+ </section>
+
  <script src="js/jquery.min.js"></script>
- <script src="js/wow.min.js"></script>
- <script src="js/slick.min.js"></script>
+ <!-- <script src="js/wow.min.js"></script>
+ <script src="js/slick.min.js"></script> -->
  <script src="js/plugins.js"></script>
+ <script src="js/navtoggle.js"></script>
+
 </body>
 
 </html>

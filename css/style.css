@@ -139,6 +139,44 @@
   .hero__logo .logo {
     font-size: 1.7rem; }
 
+.toggle {
+  background: #0d2e3a;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100vh;
+  min-height: 100vh;
+  visibility: hidden;
+  left: -200px; }
+  .toggle__logo {
+    font-size: 2rem;
+    padding-top: 30px;
+    font-weight: 400; }
+  .toggle__nav {
+    list-style: none;
+    padding-top: 20px; }
+    .toggle__nav-item {
+      display: inline-block;
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 1.5rem; }
+      .toggle__nav-item:hover {
+        background: #000; }
+    .toggle__nav-link:active {
+      font-size: 1.6rem; }
+
+.hero__toggle-container {
+  position: absolute;
+  right: 10px;
+  top: 10px; }
+  .hero__toggle-container .icon {
+    font-size: 3.5rem; }
+    .hero__toggle-container .icon:active {
+      font-size: 3.4rem; }
+.hero .toggle-close {
+  display: none; }
+
 .btn-outline-light {
   padding: 0.8rem 1.5rem;
   font-size: 1.8rem;
@@ -307,7 +345,8 @@
 .footer {
   background-color: black;
   margin-bottom: 0;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  position: relative; }
   .footer__logo-box {
     margin-bottom: 4rem; }
   .footer__navigation {
@@ -340,6 +379,24 @@
     padding-right: 1rem;
     text-align: right;
     flex-basis: 50%; }
+  .footer__go-up {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    z-index: 2;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #20708d; }
+    .footer__go-up .arrow-up {
+      position: relative;
+      top: 4px;
+      left: 14px;
+      font-size: 3rem; }
 
 .navigation__container {
   display: flex;
@@ -389,9 +446,15 @@
 
   .class-text {
     text-align: center; } }
+@media (min-width: 601px) {
+  .hero__toggle-container {
+    display: none; } }
 @media (min-width: 0px) and (max-width: 600px) {
   .hero__nav-container {
     display: none; }
+
+  .hero__nav {
+    display: block !important; }
 
   .header-text {
     font-size: 3.5rem; }

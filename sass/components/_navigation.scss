@@ -1,3 +1,5 @@
+@import 'variable';
+
 .hero {
   &__nav {
     width: 100%;
@@ -35,4 +37,61 @@
       font-size: 1.7rem;
     }
   }
+}
+
+.toggle{
+ background: $darkcyan;
+ position: absolute;
+ top: 0;
+ width: 200px;
+ height: 100vh;
+ min-height: 100vh;
+ visibility: hidden;
+left: -200px;
+
+&__logo {
+ font-size: 2rem;
+ padding-top: 30px;
+ font-weight: 400;
+}
+&__nav {
+  list-style: none;
+  padding-top: 20px;
+ 
+ &-item {
+  display: inline-block;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+
+  &:hover {
+   background: $black;
+  }
+ }
+
+ &-link:active {
+   font-size: 1.6rem;
+ }
+}
+
+}
+
+.hero {
+ &__toggle-container {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+
+  .icon{
+   font-size: 3.5rem;
+  &:active {
+   font-size: 3.4rem;
+  }
+ }
+ }
+ 
+ .toggle-close {
+  display: none;
+ }
 }
