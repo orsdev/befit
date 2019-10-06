@@ -9,10 +9,17 @@ let navBarEffect = (e) => {
   if(currentScroll > 100 && currentWidth > 600){
     document.querySelector('.hero__nav').classList.remove('bg-transparent');
     document.querySelector('.hero__nav').classList.add('bg-darkcyan');
-  }else {
+  };
+
+   if(currentScroll < 100 && currentWidth > 600){
+    document.querySelector('.hero__nav').classList.remove('bg-darkcyan');
+    document.querySelector('.hero__nav').classList.add('bg-transparent');
+   };
+
+   if(currentWidth < 601){
     document.querySelector('.hero__nav').classList.add('bg-darkcyan');
     document.querySelector('.hero__nav').classList.remove('bg-transparent');
-  }
+   };
 
 };
 
