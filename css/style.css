@@ -288,7 +288,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 330px;
+    height: 100%;
     width: 100%;
     z-index: -1;
     opacity: .7;
@@ -502,6 +502,9 @@
     top: 10%; }
   .newsletter .form__group {
     width: 90%; } }
+@media (max-width: 500px) {
+  .wow {
+    animation-name: none !important; } }
 *,
 *::before,
 *::after {
@@ -521,3 +524,5 @@ body {
 p {
   font-size: 1.5rem;
   font-weight: 100; }
+
+/*# sourceMappingURL=style.css.map */

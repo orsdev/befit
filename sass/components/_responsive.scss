@@ -123,3 +123,9 @@
    }
   }
 }
+
+@media (max-width: 500px) {
+ .wow {
+  animation-name: none !important;
+ }
+}
